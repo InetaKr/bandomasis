@@ -13,26 +13,16 @@ function countClicks(element) {
 }
 
 
-/*function countClicks(element) {
-  // element yra nuotrauka, ant kurios buvo paspausta
-  // Paimkite elemento id
-  let elementId = element.id;
-  // Paimkite span elementą, kuris atvaizduoja kiek kartų buvo paspausta ant nuotraukos
-  let spanElement = document.getElementById(elementId + "Clicks");
-  // Padidinkite kiek kartų buvo paspausta ant nuotraukos skaičių vienetu
-  spanElement.innerHTML = (parseInt(spanElement.innerHTML) + 1).toString();
-}
-*/
 
 let counter1 = 0;
-      let counter2 = 0;
+let counter2 = 0;
 
-      function incrementCounter(imageId) {
-        if (imageId === 'image1') {
-          counter1++;
-          document.getElementById('counter1').innerHTML = `Paspausta ${counter1} kartų`;
-        } else if (imageId === 'image2') {
-          counter2++;
-          document.getElementById('counter2').innerHTML = `Paspausta ${counter2} kartų`;
-        }
-      }
+function incrementCounter(imageId) {
+  if (imageId === 'image1') {
+    counter1++;
+    document.getElementById('counter1').innerHTML = `Paspausta ${counter1} kartų`;
+  } else if (imageId === 'image2') {
+    counter2++;
+    document.getElementById('counter2').innerHTML = `Paspausta ${counter2} kartų`;
+  }
+}

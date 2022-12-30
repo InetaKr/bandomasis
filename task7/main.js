@@ -11,3 +11,10 @@ const asmuo = {
   lytis : "vyras",
   vedes : false
 }
+
+function raktazodziai(objektas) {
+  return Object.keys(objektas);
+}
+
+const masyvas = raktazodziai(asmuo);
+console.log(masyvas); // ["vardas", "pavarde", "amzius", "lytis", "vedes"]

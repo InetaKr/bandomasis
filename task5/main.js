@@ -14,3 +14,10 @@ const asmenys = [
   { id: '6', name: 'Kamilė', turiMasina: true },
   { id: '7', name: 'Aloyzas', turiMasina: true }
 ];
+
+function filtruotiAsmenisSuMasinomis(asmenys) {
+  return asmenys.filter(asmuo => asmuo.turiMasina);
+}
+
+const asmenysSuMasinomis = filtruotiAsmenisSuMasinomis(asmenys);
+console.log(asmenysSuMasinomis);
