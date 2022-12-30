@@ -5,8 +5,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2 uzduotis</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./main.js"></script>
+
 </head>
 <body>
   
+    <div id="Container">
+      <h1>Dogs Vs Cats</h1>
+      <div id="FirstImage">
+        <img id="image1" src="./images/dog.jpg" onclick="countClicks(this)">
+        <br>
+        <div id="image1Clicks">0</div>
+      </div>
+      <div id="SecondImage">
+        <img id="image2" src="./images/cat.jpg" onclick="countClicks(this)">
+        <br>
+        <div id="image2Clicks">0</div>
+    </div>
+    </div>
+    <div id="container2">
+      <img id="image1" src="./images/dog.jpg" onclick="incrementCounter('image1')" />
+    <br />
+    <img id="image2" src="./images/cat.jpg" onclick="incrementCounter('image2')" />
+    <br />
+    <div id="counter1">Paspausta 0 kartų</div>
+    <br />
+    <div id="counter2">Paspausta 0 kartų</div>
+    </div>
 </body>
 </html>

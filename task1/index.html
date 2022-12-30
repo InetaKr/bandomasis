@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1 uzduotis</title>
+    <script src="./main.js" defer></script>
 </head>
 <body>
   <form>
-    <label for="temperature-input">Įveskite temperatūrą:</label><br>
-    <input type="text" id="temperature-input"><br>
-    <input type="radio" id="celsius-radio" name="temperature-unit" value="C" checked>
-    <label for="celsius-radio">C</label><br>
-    <input type="radio" id="fahrenheit-radio" name="temperature-unit" value="F">
-    <label for="fahrenheit-radio">F</label><br>
-    <div id="result-output"></div>
-  </form> 
+    <label for="temperature">Įveskite temperatūrą:</label><br>
+    <input type="text" id="temperature" name="temperature"><br>
+    <input type="radio" id="celsius" name="units" value="celsius">
+    <label for="celsius">Celsijaus</label><br>
+    <input type="radio" id="fahrenheit" name="units" value="fahrenheit">
+    <label for="fahrenheit">Farenheito</label><br>
+    <button type="button" onclick="convertTemperature()">Konvertuoti</button>
+  </form>
+  
+  <p id="result"></p>
   
 </body>
 </html>
