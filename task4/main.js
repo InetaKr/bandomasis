@@ -18,7 +18,7 @@ function getData() {
         const movieItem = document.createElement('li');
         
         // Create a text node with the movie title and actor name
-        const movieText = document.createTextNode(`${movie.title} - ${movie.actors}`);
+        const movieText = document.createTextNode(`${movie.title} - ${movie.castAndCrew.actors[0].name}`);
         
         // Append the text node to the li element
         movieItem.appendChild(movieText);
